@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'ttnorms';
+    src: url('./assets/fonts/ttnorms-medium-webfont.woff');
+}
+
+@font-face {
+    font-family: 'benzin-semibold';
+    src: url('./assets/fonts/benzin-semibold-webfont.woff');
+}
+
+@font-face {
+    font-family: 'benzin-bold';
+    src: url('./assets/fonts/benzin_bold-webfont.woff');
+}
