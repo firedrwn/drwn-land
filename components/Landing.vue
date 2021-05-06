@@ -21,7 +21,7 @@
       </div>
 
       <div class="bg-deep-purple text-white">
-          <div class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
+          <div id="arrowSection" class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
               <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:mt-28 xl:pl-32 xl:mt-20 lg:pt-1 md:order-last">
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Заложи основу</div>
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">за один день!</div>
@@ -114,9 +114,9 @@ export default {
             tl3.from("#algo-text", {x: -200, opacity: 0, duration: 1})
         },
         arrowAnim: function() {
-            const tl = gsap.timeline({ ease: "expo.out", delay: .5 })
-            const tl2 = gsap.timeline({ ease: "expo.out" })
-            const tl3 = gsap.timeline({ ease: "expo.out" })
+            const tl = gsap.timeline({ ease: "expo.out", delay: .5, scrollTrigger: { trigger: "#arrowSection", start: "top center-=100"} })
+            const tl2 = gsap.timeline({ ease: "expo.out" , scrollTrigger: { trigger: "#arrowSection", start: "top center-=100"}})
+            const tl3 = gsap.timeline({ ease: "expo.out" , scrollTrigger: { trigger: "#arrowSection", start: "top center-=100"}})
 
             tl.from("#ar2", { x: -100, y: 100, duration: .5, opacity: 0 })
             tl.from("#ar1", { x: -100, y: 100, duration: .5, opacity: 0 }, "-=.33")
