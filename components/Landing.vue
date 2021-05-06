@@ -13,8 +13,9 @@
                     <div class="font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer">начать</div>
                   </div>
               </div>
-              <div class="mt-5 md:mt-0">
-                  <img src="/img/macbook.png" alt="">
+              <div class="relative mt-5 md:mt-0">
+                  <img class="greenCirc absolute w-42 left-16 top-10" src="/img/greenCirc.svg" alt="">
+                  <img class="z-10" src="/img/macbook.png" alt="">
               </div>
           </div>
       </div>
@@ -81,7 +82,16 @@ export default {
         english: function() {
             let tl = gsap.timeline()
             tl.to("#algo", { duration: 1, text: "algorithms"})
+        },
+        greenCircAnim: function() {
+            const tl = gsap.timeline()
+            tl.set(".greenCirc", {scale: 0.2})
+            tl.from(".greenCirc", {y: -200, duration: 2,  ease: "elastic.out( 1, 0.3)"})
+            tl.to(".greenCirc", {scale: 1, duration: 0.5})
         }
+    },
+    mounted() {
+        this.greenCircAnim()
     }
 }
 </script>
