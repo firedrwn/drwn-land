@@ -16,7 +16,7 @@
                 </div>
             </div>
 
-            <img class="absolute top-0 right-0 -mt-1" src="/img/topArrows.svg" alt="">
+            <img class="hidden lg:inline absolute top-0 right-0 -mt-1" src="/img/topArrows.svg" alt="">
             <img class="hidden lg:inline absolute bottom-0 right-96 -mb-1" src="/img/botArrows.svg" alt="">
         </div>
         </div>

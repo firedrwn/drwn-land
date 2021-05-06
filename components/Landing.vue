@@ -6,15 +6,15 @@
                   <div @click="english" id="algo" class="font-benzin-bold text-3xl lg:text-5xl xl:text-6xl ">Алгоритмы</div>
                   <div class="font-benzin-bold text-3xl lg:text-5xl xl:text-6xl ">покупок</div>
                   <div class="font-benzin-bold text-3xl lg:text-5xl xl:text-6xl ">от уровня</div>
-                  <div class="font-ttnorms mt-5 text-lg xl:text-2xl">Только на практике можно понять </div>
-                  <div class="font-ttnorms text-lg xl:text-2xl">применимость разных инструментов.</div>
-                  <div class="font-ttnorms text-lg xl:text-2xl">Мы даем это — попробуй бесплатно!</div>
+                  <div class="font-ttnorms mt-5 sm:text-lg xl:text-2xl">Только на практике можно понять </div>
+                  <div class="font-ttnorms sm:text-lg xl:text-2xl">применимость разных инструментов.</div>
+                  <div class="font-ttnorms sm:text-lg xl:text-2xl">Мы даем это — попробуй бесплатно!</div>
                   <div class="flex">
                     <div class="font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple">начать</div>
                   </div>
               </div>
               <div class="relative mt-5 md:mt-0">
-                  <img class="greenCirc absolute w-42 left-16 top-10" src="/img/greenCirc.svg" alt="">
+                  <img class="greenCirc hidden lg:inline absolute w-42 left-16 top-10" src="/img/greenCirc.svg" alt="">
                   <img class="z-10 macbook" src="/img/macbook.png" alt="">
               </div>
           </div>

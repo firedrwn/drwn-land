@@ -18,7 +18,7 @@
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
         </div> -->
 
-        <div :class="{ hidden: isHidden }" class="flex self-center align-middle  cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
+        <div class="flex self-center align-middle  cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
             <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
             <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt="">
         </div>
