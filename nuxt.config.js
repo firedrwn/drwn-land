@@ -30,6 +30,11 @@ export default {
         src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js",
         defer: true,
       },
+      {
+        hid: "gsap",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js",
+        defer: true,
+      },
     ]
   },
 
