@@ -12,7 +12,7 @@
 
             <div class="flex justify-center lg:justify-around lg:w-1/2 lg:pl-64">
                 <div class="md:self-center">
-                    <div class="border-4 border-light-purple text-white inline-block py-1 px-3 rounded transform hover:border-base-green transition duration-300 cursor-pointer font-benzin-bold">Получить</div>
+                    <div class="border-2 border-light-purple text-white inline-block py-2 px-4 rounded transform hover:border-base-green transition duration-300 cursor-pointer font-benzin-bold uppercase">Получить</div>
                 </div>
             </div>
 

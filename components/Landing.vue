@@ -96,10 +96,10 @@ export default {
             tl.to("#algo", { duration: 1, text: "algorithms"})
         },
         greenCircAnim: function() {
-            const tl = gsap.timeline()
+            const tl = gsap.timeline({ delay: .3})
             const tl1 = gsap.timeline({ repeat: -1 })
-            const tl2 = gsap.timeline()
-            const tl3 = gsap.timeline()
+            const tl2 = gsap.timeline({ delay: .3})
+            const tl3 = gsap.timeline({ delay: .3})
 
             tl.set(".greenCirc", {scale: 0.2})
             tl.from(".greenCirc", {y: -300, duration: .7, opacity: 0,  ease: "back.out(1.2)", delay: 1.5})
@@ -125,15 +125,15 @@ export default {
             tl2.set("#tablet", {zIndex: 100})
             tl2.from("#tablet", { scale: 0, duration: .5, opacity: 0 })
 
-            tl3.from("#stag", { y: -20, stagger: 0.1, opacity: 0 })
+            tl3.from("#stag", { y: -20, stagger: 0.2, opacity: 0, delay: .7 })
         },
         cardAnim: function() {
             const tl = gsap.timeline({ ease: "expo.out", scrollTrigger: { trigger: "#practice", start: "top center" } })
             const tl2 = gsap.timeline({ ease: "expo.out", scrollTrigger: { trigger: "#practice", start: "top center" }})
 
-            tl.from("#card1", { x: -200, duration: .3, opacity: 0 })
-            tl.from("#card2", { x: -300, duration: .3, opacity: 0 }, "-=.1")
-            tl.from("#card3", { x: -400, duration: .3, opacity: 0 }, "-=.2")
+            tl.from("#card1", { x: -200, duration: .5, opacity: 0 })
+            tl.from("#card2", { x: -300, duration: .5, opacity: 0 }, "-=.3")
+            tl.from("#card3", { x: -400, duration: .5, opacity: 0 }, "-=.3")
 
             tl2.from("#practice", { opacity: 0, duration: 1 })
         }
