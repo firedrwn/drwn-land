@@ -24,7 +24,7 @@
           <div id="arrowSection" class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
               <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:mt-28 xl:pl-32 xl:mt-20 lg:pt-1 md:order-last">
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Заложи основу</div>
-                  <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">за один день!</div>
+                  <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl xl:mb-10">за один день!</div>
                   <div id="stag" class="flex align-middle mt-5 mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Четкий алгоритм</div>
