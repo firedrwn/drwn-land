@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base-purple py-20">
+  <div class="bg-base-purple pb-20 pt-8">
       <div class="p-6 max-w-screen-2xl sm:mx-auto">
           <div>
         <div class="relative flex flex-col lg:flex-row border-4 md:mx-24 border-base-green rounded py-4 px-3 lg:justify-around lg:p-10 md:align-middle">

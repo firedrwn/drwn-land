@@ -10,7 +10,7 @@
                   <div class="font-ttnorms sm:text-lg xl:text-2xl">применимость разных инструментов.</div>
                   <div class="font-ttnorms sm:text-lg xl:text-2xl">Мы даем это — попробуй бесплатно!</div>
                   <div class="flex">
-                    <div class="font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple">начать</div>
+                    <div class="font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</div>
                   </div>
               </div>
               <div class="relative mt-5 md:mt-0">
@@ -38,7 +38,7 @@
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Сообщество единомышленников</div>
                   </div>
                   <div id="stag" class="flex">
-                    <div class="font-benzin-bold py-2 px-3 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green text-white transition duration-300 hover:bg-base-green hover:text-deep-purple rounded-sm cursor-pointer">начать</div>
+                    <div class="font-benzin-bold py-2 px-3 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green text-white transition duration-300 hover:bg-base-green hover:text-deep-purple rounded-sm cursor-pointer uppercase">начать</div>
                   </div>
               </div>
               <div class="mt-5 md:mt-12 md:w-2/3 lg:mt-28 lg:mb-20">
@@ -63,19 +63,25 @@
               <div id="practice" class="ml-8 my-10  font-benzin-bold text-3xl lg:text-4xl xl:text-4xl md:ml-28 xl:pl-4 text-center md:text-left">Этапы практики</div>
               <div class="mt-10 flex flex-col lg:flex-row  justify-center items-center lg:items-stretch">
                   <div id="card1" class="flex flex-col justify-center w-80 items-center text-center bg-deep-purple rounded mx-8 md:mx-0 px-5 mb-10 md:w-96 h-130">
-                      <div class="font-benzin-semibold text-xl bg-deep-purple rounded-full border border-base-green py-2 px-5 -mt-20">1</div>
+                      <div class="py-2 px-5 -mt-20">
+                          <img src="/img/1.svg" alt="">
+                      </div>
                       <div class="h-48 px-10 lg:px-20 mt-16"><img src="/img/pic1.svg" alt=""></div>
                       <div class="font-benzin-semibold px-10 mb-3 lg:text-xl">Лекции и алгоритмы</div>
                       <div class="font-ttnorms px-2 mb-5">Короткое, понятное и пошаговое описание инструментов и способов их применения</div>
                   </div>
                   <div id="card2" class="flex flex-col justify-center w-80 items-center text-center bg-deep-purple rounded mx-16 px-5 mb-10 md:w-96 h-130">
-                      <div class="font-benzin-semibold text-xl bg-deep-purple rounded-full border border-base-green py-2 px-5 -mt-20">2</div>
+                      <div class="py-2 px-5 -mt-20">
+                          <img src="/img/2.svg" alt="">
+                      </div>
                       <div class="h-48 px-10 mt-16"><img src="/img/pic2.svg" alt=""></div>
                       <div class="font-benzin-semibold px-10 mb-3 lg:text-xl lg:px-20">Работа в группе</div>
                       <div class="font-ttnorms px-2 mb-5">Практика с единомышленниками под руководством опытного наставника</div>
                   </div>
                   <div id="card3" class="flex flex-col justify-center w-80 items-center text-center bg-deep-purple rounded mx-8 md:mx-0 px-5 mb-10 md:w-96 h-130">
-                      <div class="font-benzin-semibold text-xl bg-deep-purple rounded-full border border-base-green py-2 px-5 -mt-20">3</div>
+                      <div class="py-2 px-5 -mt-20">
+                          <img src="/img/3.svg" alt="">
+                      </div>
                       <div class="h-48 px-10 mt-16"><img src="/img/pic3.svg" alt=""></div>
                       <div class="font-benzin-semibold px-10 mb-3 lg:text-xl ">Разбор с модератором</div>
                       <div class="font-ttnorms px-2 mb-5">Ценные практические советы для увеличения прибыли</div>
