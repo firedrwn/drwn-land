@@ -67,23 +67,23 @@
                           <img src="/img/1.svg" alt="">
                       </div>
                       <div class="h-48 px-10 lg:px-20 mt-16"><img src="/img/pic1.svg" alt=""></div>
-                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl">Лекции и алгоритмы</div>
-                      <div class="font-ttnorms px-2 mb-5">Короткое, понятное и пошаговое описание инструментов и способов их применения</div>
+                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl">Лекции и&nbsp;алгоритмы</div>
+                      <div class="font-ttnorms px-2 mb-5">Короткое, понятное и&nbsp;пошаговое описание инструментов и&nbsp;способов их&nbsp;применения</div>
                   </div>
                   <div id="card2" class="flex flex-col justify-center w-80 items-center text-center bg-deep-purple rounded mx-16 px-5 mb-10 md:w-96 h-130">
                       <div class="py-2 px-5 -mt-20">
                           <img src="/img/2.svg" alt="">
                       </div>
                       <div class="h-48 px-10 mt-16"><img src="/img/pic2.svg" alt=""></div>
-                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl lg:px-20">Работа в группе</div>
-                      <div class="font-ttnorms px-2 mb-5">Практика с единомышленниками под руководством опытного наставника</div>
+                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl lg:px-20">Работа в&nbsp;группе</div>
+                      <div class="font-ttnorms px-2 mb-5">Практика с&nbsp;единомышленниками под руководством опытного наставника</div>
                   </div>
                   <div id="card3" class="flex flex-col justify-center w-80 items-center text-center bg-deep-purple rounded mx-8 md:mx-0 px-5 mb-10 md:w-96 h-130">
                       <div class="py-2 px-5 -mt-20">
                           <img src="/img/3.svg" alt="">
                       </div>
                       <div class="h-48 px-10 mt-16"><img src="/img/pic3.svg" alt=""></div>
-                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl ">Разбор с модератором</div>
+                      <div class="font-benzin-semibold px-10 mb-3 lg:text-xl ">Разбор с&nbsp;модератором</div>
                       <div class="font-ttnorms px-2 mb-5">Ценные практические советы для увеличения прибыли</div>
                   </div>
               </div>
