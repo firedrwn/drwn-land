@@ -1,24 +1,24 @@
 <template>
 <div class="bg-deep-purple">
-    <div class="flex justify-center items-center mx-auto max-w-screen-2xl">
+    <div class="sm:flex sm:align-middle mx-auto max-w-screen-2xl">
         <div class="h-32 sm:mx-10 lg:mx-32 flex align-middle justify-around">
             <nuxt-link class="w-32 flex align-middle" to="/">
                 <img class="w-32" src="@/assets/img/logo.svg" alt="">
             </nuxt-link>
-            <!-- <svg @click="isHidden = !isHidden" xmlns="http://www.w3.org/2000/svg" class="burger w-8 cursor-pointer sm:hidden" viewBox="0 0 24 24" stroke="currentColor">
+            <svg @click="isHidden = !isHidden" xmlns="http://www.w3.org/2000/svg" class="burger w-8 cursor-pointer sm:hidden" viewBox="0 0 24 24" stroke="currentColor">
                 <path v-if="isHidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg> -->
+            </svg>
         </div>
 
-        <!-- <div id="menu" :class="{ hidden: isHidden }" class="uppercase text-white flex flex-col sm:flex-row ml-14 font-ttnorms">
+        <div id="menu" :class="{ hidden: isHidden }" class="uppercase text-white flex flex-col sm:flex-row ml-14 font-ttnorms">
             <nuxt-link to="/review" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обзоры</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обучение</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">идеи</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
-        </div> -->
+        </div>
 
-        <div class="flex self-center align-middle  cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
+        <div :class="{ hidden: isHidden }" class="flex self-center pb-5 sm:pb-0 cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
             <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
             <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt="">
         </div>
@@ -40,7 +40,7 @@ export default {
             } else {
                 return false
             }
-        },
+        }
     }
 }
 </script>
