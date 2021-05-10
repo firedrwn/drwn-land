@@ -4,7 +4,7 @@
     <div class="bg-deep-purple">
         <div class="flex justify-center items-center mx-auto max-w-screen-2xl">
             <div class="h-32 sm:mx-10 lg:mx-32 flex align-middle justify-around">
-                <nuxt-link class="w-32 flex align-middle" to="/">
+                <nuxt-link class="w-32 flex align-middle" to="/ideas">
                     <img class="w-32" src="@/assets/img/logo.svg" alt="">
                 </nuxt-link>
                 <!-- <svg @click="isHidden = !isHidden" xmlns="http://www.w3.org/2000/svg" class="burger w-8 cursor-pointer sm:hidden" viewBox="0 0 24 24" stroke="currentColor">
