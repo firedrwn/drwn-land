@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="bg-base-purple text-white py-20">
+      <div class="bg-base-purple text-white pt-20">
           <div class="max-w-screen-2xl md:mx-auto">
               <div class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl text-center md:text-left md:ml-8 lg:ml-32">Отзывы</div>
               <div class="flex flex-col md:flex-row lg:mx-24 flex-wrap">

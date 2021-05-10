@@ -51,7 +51,7 @@
           <div id="arrowSection" class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
               <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:mt-28 xl:pl-32 xl:mt-20 lg:pt-1 md:order-last">
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Делегируй</div>
-                  <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl xl:mb-10">инфошум нам!</div>
+                  <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl xl:mb-5 2xl:mb-10">инфошум нам!</div>
                   <div id="stag" class="flex align-middle mt-5 mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Четкий алгоритм</div>
@@ -60,7 +60,7 @@
                     <img class="w-4" src="/img/greenDot.svg" alt="">
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Отработка в группе</div>
                   </div>
-                  <div id="stag" class="flex align-middle mb-3">
+                  <div id="stag" class="flex align-middle 2xl:mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Сообщество единомышленников</div>
                   </div>
@@ -88,7 +88,7 @@
      
   </div>
 <div>
-  <div class="bg-base-purple pb-20 pt-8">
+  <div class="bg-base-purple py-20">
       <div class="p-6 max-w-screen-2xl sm:mx-auto">
           <div>
         <div class="relative flex flex-col lg:flex-row border-4 md:mx-24 border-base-green rounded py-4 px-3 lg:justify-around lg:p-10 md:align-middle">
