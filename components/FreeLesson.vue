@@ -8,7 +8,7 @@
             <div class="md:flex lg:justify-around lg:w-1/2">
                 <div class="mb-5 md:mb-0 md:self-center md:mr-5 lg:w-80"><input class="placeholder-opcity-50 bg-base-purple text-white outline-none lg:w-80" placeholder="Ваш E-mail" type="text"></div>
                 <div class="md:self-center">
-                    <div class="border-4 border-light-purple text-white inline-block py-1 px-3 rounded transform hover:border-base-green transition duration-300 cursor-pointer font-benzin-bold">Получить</div>
+                    <div class="border-2 border-base-green mr-5 text-white inline-block py-3 px-6 text-sm rounded transform hover:bg-base-green hover:text-deep-purple transition duration-300 cursor-pointer font-benzin-bold uppercase">Получить</div>
                 </div>
             </div>
         </div>

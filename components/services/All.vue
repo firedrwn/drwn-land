@@ -12,7 +12,7 @@
         <div class="mx-5">{{ item.price }}</div>
         <div class="mx-5 text-base-red text-sm">{{ item.secPrice }}</div>
       </div>
-      <div class="border-4 border-light-purple hover:border-base-green transition duration-300 cursor-pointer text-center self-center rounded mx-5 px-4 py-2 font-benzin-bold text-sm">Купить</div>
+      <div class="border-2 border-light-purple hover:border-base-green mr-5 text-white inline-block py-3 px-6 text-sm rounded transform hover:bg-base-green hover:text-deep-purple transition duration-300 cursor-pointer font-benzin-bold uppercase">Купить</div>
     </div>
   </div>
 </div>
