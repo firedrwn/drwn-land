@@ -119,7 +119,7 @@
       </div>
   </div>
 <div>
-  <div class="bg-base-purple pb-20 pt-8">
+  <div class="bg-base-purple py-8">
       <div class="p-6 max-w-screen-2xl sm:mx-auto">
           <div>
         <div class="relative flex flex-col lg:flex-row border-4 md:mx-24 border-base-green rounded py-4 px-3 lg:justify-around lg:p-10 md:align-middle">
@@ -143,6 +143,9 @@
       </div>
   </div>
 </div>
+
+<Feedback :feedbacks="feedbacks" />
+
 <div>
   <div class="bg-base-purple py-5 md:py-10">
       <div class="flex flex-col sm:flex-row justify-between mx-auto max-w-screen-2xl">
@@ -174,7 +177,32 @@ export default {
                 '/img/fb.svg',
                 '/img/tw.svg',
                 '/img/vk.svg',
-            ]
+            ],
+      feedbacks: [
+                {
+                    name: 'Максим',
+                    initials: 'MA',
+                    img: '',
+                    feedback: '/img/feedbacks/maxim.png',
+                    text: 'Ребята, спасибо огромное за новый формат практики! Учебные материалы на новом уровне!...',
+                    open: false,
+                },
+                {
+                    name: 'Артем',
+                    initials: 'AM',
+                    img: '',
+                    feedback: '/img/feedbacks/artem.png',
+                    text: 'Спасибо за обзор вашей методики на семинаре! DRWN умеет удивлять) Все и так разжевано было, а теперь это как...',
+                    open: false,
+                },
+                {
+                    name: 'Анна',
+                    initials: 'AA',
+                    img: '/img/ayzada.png',
+                    text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
+                    open: false,
+                },
+            ],
     }
   },
   methods: {

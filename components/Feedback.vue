@@ -10,9 +10,9 @@
                         <div v-else class="bg-base-purple font-benzin-semibold rounded-full h-16 w-16 flex items-center justify-center">{{ feedback.initials }}</div>
                         <div class="font-benzin-semibold ml-4">{{ feedback.name }}</div>
                     </div>
-                    <div v-if="!feedback.open" class="mt-5 font-ttnorms">{{ lessWords(feedback.text) }}</div>
-                    <div v-else class="mt-5 font-ttnorms">{{ feedback.text }}</div>
-                    <div @click="feedback.open = !feedback.open" class="mt-5 font-ttnorms text-base-green cursor-pointer">Читать отзыв полностью</div>
+                    <div class="mt-5 font-ttnorms">{{ feedback.text }}</div>
+                    <div @click="openFeedback($event)" class="mt-5 font-ttnorms text-base-green cursor-pointer">Читать отзыв полностью</div>
+                    <img @click="closeFeedback($event)" class="absolute invisible cursor-pointer shadow-lg rounded" :src="feedback.feedback" :id="feedback.name" alt="">
                 </div>
               </div>
           </div>
@@ -22,34 +22,24 @@
 
 <script>
 export default {
+    props: ['feedbacks'],
     data() {
-        return {
-            feedbacks: [
-                {
-                    name: 'Юрий',
-                    initials: 'UD',
-                    img: '',
-                    text: 'Спасибо каналу за материалы по стратегии! Подчерпнул очень много полезной информации и часть даже закрепил. ',
-                    open: false,
-                },
-                {
-                    name: 'Галина',
-                    initials: 'GA',
-                    img: '',
-                    text: 'На данный момент я новичок на трейдерском пути с большим желанием учиться, а эти материалы — просто находка!',
-                    open: false,
-                },
-                {
-                    name: 'Айзада',
-                    initials: 'AA',
-                    img: '/img/ayzada.png',
-                    text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
-                    open: false,
-                },
-            ]
-        }
+        return {}
     },
     methods: {
+        closeFeedback: function(e) {
+            const img = e.target
+            const tl = gsap.timeline()
+            img.classList.add("invisible")
+            tl.to(`#${img.id}`, { scale: 0.7, duration: .7, opacity: 0, y: 700, ease: "elastic.in(1, 0.5)" })
+        },
+        openFeedback: function(e) {
+            const img = e.target.nextElementSibling
+            const tl = gsap.timeline()
+            tl.set(`#${img.id}`, { opacity: 0, scale: 0.7, y: 700, visibility: "visible", position: "fixed", bottom: "50%", left: "50%", xPercent: -50, yPercent: 50 })
+            img.classList.remove("invisible")
+            tl.to(`#${img.id}`, { scale: 1, duration: 1, opacity: 1, ease: "elastic.out(1, 0.5)", y: 0})
+        },
         lessWords: function(text) {
             if (text.split(' ').length > 20) {
                 let newText = text.split(' ')

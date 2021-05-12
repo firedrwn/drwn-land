@@ -38,7 +38,7 @@
                   <div class="font-ttnorms mt-5 sm:text-lg xl:text-2xl">Полный доступ к ключевым этапам сделки</div>
                   <div class="font-ttnorms sm:text-lg xl:text-2xl">в вашем телефоне</div>
                   <div class="flex">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
                   </div>
               </div>
               <div class="relative mt-5 md:mt-0 mr-3 lg:w-1/3 lg:mr-32">
@@ -49,23 +49,27 @@
 
       <div class="bg-deep-purple text-white">
           <div id="arrowSection" class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
-              <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:mt-28 xl:pl-32 xl:mt-20 lg:pt-1 md:order-last">
+              <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:pl-32 xl:mt-12 lg:pt-1 md:order-last">
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Делегируй</div>
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl xl:mb-5 2xl:mb-10">инфошум нам!</div>
                   <div id="stag" class="flex align-middle mt-5 mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
-                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Четкий алгоритм</div>
+                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Идея и все действия по ней прилетают мгновенно через бота</div>
                   </div>
                   <div id="stag" class="flex align-middle mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
-                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Отработка в группе</div>
+                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Мы следим за сделками 24/7</div>
                   </div>
                   <div id="stag" class="flex align-middle 2xl:mb-3">
                     <img class="w-4" src="/img/greenDot.svg" alt="">
-                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Сообщество единомышленников</div>
+                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Четкий алгоритм, всегда понимаете что и почему мы делаем</div>
+                  </div>
+                  <div id="stag" class="flex align-middle 2xl:mb-3">
+                    <img class="w-4" src="/img/greenDot.svg" alt="">
+                    <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Всегда на связи!</div>
                   </div>
                   <div id="stag" class="flex">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold py-2 px-3 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green text-white transition duration-300 hover:bg-base-green hover:text-deep-purple rounded-sm cursor-pointer uppercase">начать</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green text-white transition duration-300 hover:bg-base-green hover:text-deep-purple rounded-sm cursor-pointer uppercase">начать</a>
                   </div>
               </div>
               <div class="mt-5 md:mt-12 md:w-2/3 lg:mt-28 lg:mb-20">
@@ -87,11 +91,14 @@
 
      
   </div>
+
+    <StockCard />
+
 <div>
   <div class="bg-base-purple py-20">
       <div class="p-6 max-w-screen-2xl sm:mx-auto">
           <div>
-        <div class="relative flex flex-col lg:flex-row border-4 md:mx-24 border-base-green rounded py-4 px-3 lg:justify-around lg:p-10 md:align-middle">
+        <div class="greenCard relative flex flex-col lg:flex-row border-4 md:mx-24 border-base-green rounded py-4 px-3 lg:justify-around lg:p-10 md:align-middle">
             <div>
                 <div class="text-base-green uppercase font-benzin-semibold mb-3">бесплатно</div>
                 <div class="text-white mb-5 lg:mb-0 font-benzin-semibold uppercase md:text-xl">Получи материалы и доступ</div>
@@ -101,7 +108,7 @@
 
             <div class="flex justify-center lg:justify-around lg:w-1/2 lg:pl-64">
                 <div class="md:self-center">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot border-2 border-base-green text-white inline-block py-2 px-4 rounded transform hover:bg-base-green hover:text-deep-purple transition duration-300 cursor-pointer font-benzin-bold uppercase">Получить</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot border-2 border-base-green text-white inline-block py-3 px-6 text-sm rounded transform hover:bg-base-green hover:text-deep-purple transition duration-300 cursor-pointer font-benzin-bold uppercase">Получить</a>
                 </div>
             </div>
 
@@ -116,9 +123,9 @@
 <div>
     <div class="bg-deep-purple">
         <div class="max-w-screen-2xl py-20 sm:mx-auto text-white">
-            <div class="text-center font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Полная стратегия</div>
+            <div id="fullStrat" class="text-center font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Полная стратегия</div>
             <div class="flex flex-wrap justify-center md:mx-10 lg:mx-28">
-                <div class="flex flex-col  my-10 mx-10 lg:mr-28 lg:ml-16 text-center justify-center items-center" v-for="(strat, index) in strategy" :key="index">
+                <div class="strats flex flex-col  my-10 mx-10 lg:mr-28 lg:ml-16 text-center justify-center items-center" v-for="(strat, index) in strategy" :key="index">
                     <img class="w-24 mb-5" :src="strat.img" alt="">
                     <div class="font-benzin-bold">{{ strat.text1 }}</div>
                     <div class="font-benzin-bold">{{ strat.text2 }}</div>
@@ -128,7 +135,7 @@
     </div>
 </div>
 
-<Feedback />
+<Feedback id="feed" :feedbacks="feedbacks" />
 
 <div>
   <div class="bg-base-purple py-5 md:py-16">
@@ -155,6 +162,31 @@ export default {
     return {
       utm: '',
       isHidden: this.menuHidden(),
+      feedbacks: [
+                {
+                    name: 'Татьяна',
+                    initials: 'TA',
+                    img: '',
+                    feedback: '/img/feedbacks/tatiana.png',
+                    text: 'Хочу поблагодарить за вашу поддержку и торговые идеи. Я всегда уверена, что меня не оставят наедине. Я всегда уверена, что... ',
+                    open: false,
+                },
+                {
+                    name: 'Арсений',
+                    initials: 'AR',
+                    img: '',
+                    feedback: '/img/feedbacks/arseny.png',
+                    text: 'Давно хотел написать, вы, ребята, держите руку на пульсе. Вовремя выйти и не сидеть страдать — больше дело!',
+                    open: false,
+                },
+                {
+                    name: 'Анна',
+                    initials: 'AA',
+                    img: '/img/ayzada.png',
+                    text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
+                    open: false,
+                },
+            ],
       images: [
                 '/img/tg.svg',
                 '/img/yt.svg',
@@ -240,12 +272,23 @@ export default {
             tl.from("#card3", { x: -400, duration: .5, opacity: 0 }, "-=.3")
 
             tl2.from("#practice", { opacity: 0, duration: 1 })
+        },
+        stratAnim: function() {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".strats",
+                    // start: "top top",
+                    // markers: true
+                }
+            })
+            tl.from(".strats", { y: 100, opacity: 0, stagger: .4, delay: 1 })
         }
   },
   mounted() {
     this.greenCircAnim()
     this.arrowAnim()
     this.cardAnim()
+    this.stratAnim()
     let data = location.search;
     console.log(data)
     if (data !== '') {

@@ -13,7 +13,7 @@
 
         <div id="menu" :class="{ hidden: isHidden }" class="uppercase text-white flex flex-col sm:flex-row ml-14 font-ttnorms">
             <nuxt-link to="/review" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обзоры</nuxt-link>
-            <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обучение</nuxt-link>
+            <nuxt-link to="/education" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обучение</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">идеи</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
         </div>
