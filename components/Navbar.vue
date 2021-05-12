@@ -2,7 +2,7 @@
 <div class="bg-deep-purple">
     <div class="sm:flex sm:align-middle mx-auto max-w-screen-2xl">
         <div class="h-32 sm:mx-10 lg:mx-32 flex align-middle justify-around">
-            <nuxt-link class="w-32 flex align-middle" to="/">
+            <nuxt-link class="main-logo w-32 flex align-middle" to="/">
                 <img class="w-32" src="@/assets/img/logo.svg" alt="">
             </nuxt-link>
             <svg @click="isHidden = !isHidden" xmlns="http://www.w3.org/2000/svg" class="burger w-8 cursor-pointer sm:hidden" viewBox="0 0 24 24" stroke="currentColor">
@@ -15,7 +15,7 @@
             <nuxt-link to="/review" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обзоры</nuxt-link>
             <nuxt-link to="/education" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обучение</nuxt-link>
             <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">идеи</nuxt-link>
-            <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
+            <nuxt-link to="##" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
         </div>
 
         <div :class="{ hidden: isHidden }" class="flex self-center pb-5 sm:pb-0 cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
@@ -54,6 +54,12 @@ export default {
         border-bottom: 2px solid #00ff4a;
         /* text-decoration: underline; */
         /* text-decoration-color: #00ff4a; */
+    }
+    .nuxt-link-exact-active {
+        border-bottom: 2px solid #00ff4a;
+    }
+    .main-logo {
+        border-bottom: none !important;
     }
 }
 

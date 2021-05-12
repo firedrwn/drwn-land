@@ -16,3 +16,16 @@
     font-family: 'benzin-bold';
     src: url('./assets/fonts/benzin_bold-webfont.woff');
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+body, html {
+    background-color: #190624;
+}
