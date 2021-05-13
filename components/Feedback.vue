@@ -31,14 +31,14 @@ export default {
             const img = e.target
             const tl = gsap.timeline()
             img.classList.add("invisible")
-            tl.to(`#${img.id}`, { scale: 0.7, duration: .7, opacity: 0, y: 700, ease: "elastic.in(1, 0.5)" })
+            tl.to(`#${img.id}`, { scale: 0.7, duration: .7, opacity: 0, y: 700, ease: "power4.out" })
         },
         openFeedback: function(e) {
             const img = e.target.nextElementSibling
             const tl = gsap.timeline()
             tl.set(`#${img.id}`, { opacity: 0, scale: 0.7, y: 700, visibility: "visible", position: "fixed", bottom: "50%", left: "50%", xPercent: -50, yPercent: 50 })
             img.classList.remove("invisible")
-            tl.to(`#${img.id}`, { scale: 1, duration: 1, opacity: 1, ease: "elastic.out(1, 0.5)", y: 0})
+            tl.to(`#${img.id}`, { scale: 1, duration: 1, opacity: 1, ease: "power4.out", y: 0})
         },
         lessWords: function(text) {
             if (text.split(' ').length > 20) {

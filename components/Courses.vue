@@ -2,8 +2,8 @@
   <div>
       <div class="bg-base-purple">
           <div class="max-w-screen-2xl md:mx-auto text-white">
-              <div class="py-20 flex flex-col sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start items-stretch md:mx-24">
-                  <div v-for="(course, index) in courses" :key="index" class="boxcard border-2 flex-1 max-w-md md:flex-initial lg:w-96  border-light-purple transition duration-300 hover:border-base-green rounded mx-5 md:mx-8 mb-10 cursor-pointer">
+              <div class="py-20 flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-16 justify-center lg:justify-start mx-5  md:mx-32">
+                  <div v-for="(course, index) in courses" :key="index" class="border-2 max-w-md xl:flex-initial border-light-purple transition duration-300 hover:border-base-green rounded cursor-pointer">
                       <nuxt-link :to="course.link" class="flex flex-col items-stretch h-full justify-between">
                         <div class="text-light-purple font-benzin-semibold ml-5 mt-5 text-sm" v-html="course.type"></div>
                         <div class="font-benzin-bold uppercase text-xl mx-5" v-html="course.title"></div>

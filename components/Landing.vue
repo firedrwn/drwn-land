@@ -76,7 +76,7 @@ export default {
                 trigger: ".svg1",
                 start: "top center",
                 end: "bottom+=200 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
 
@@ -85,7 +85,7 @@ export default {
                 trigger: ".svg1",
                 start: "top center",
                 end: "bottom-=400 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
 
@@ -94,7 +94,7 @@ export default {
                 trigger: "#imac-text",
                 start: "top center",
                 end: "bottom center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
 
@@ -103,7 +103,7 @@ export default {
                 trigger: "#imac-text",
                 start: "top center",
                 end: "bottom-=400 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
 
@@ -113,7 +113,7 @@ export default {
                 trigger: ".svg2",
                 start: "top center",
                 end: "bottom+=200 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
         let macbookText = gsap.timeline({
@@ -121,7 +121,7 @@ export default {
                 trigger: ".svg2",
                 start: "top center",
                 end: "bottom+=200 center",
-                scrub: 1,
+                // scrub: 1,
             }
         })
         let macbookMobile = gsap.timeline({
@@ -129,7 +129,7 @@ export default {
                 trigger: ".svg2",
                 start: "top-=200 center",
                 end: "bottom center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
         let macbookTextMobile = gsap.timeline({
@@ -137,7 +137,7 @@ export default {
                 trigger: ".svg2",
                 start: "top-=500  center",
                 end: "bottom center",
-                scrub: 1,
+                // scrub: 1,
             }
         })
 
@@ -146,7 +146,7 @@ export default {
                 trigger: ".svg3",
                 start: "top center",
                 end: "bottom+=200 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
         let iphoneText = gsap.timeline({
@@ -154,7 +154,7 @@ export default {
                 trigger: ".svg3",
                 start: "top center",
                 end: "bottom+=200 center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
         let iphoneMobile = gsap.timeline({
@@ -162,7 +162,7 @@ export default {
                 trigger: ".svg3",
                 start: "top-=200 center",
                 end: "bottom center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
         let iphoneTextMobile = gsap.timeline({
@@ -170,21 +170,21 @@ export default {
                 trigger: ".svg3",
                 start: "top-=200 center",
                 end: "bottom center",
-                scrub: 1.5,
+                // scrub: 1.5,
             }
         })
 
         if (window.innerWidth < 640) {
-            imacMoblie.from(".svg1", { x: 100, opacity: 0, duration: 1 })
-                .from("#top-chart", { y: -50, opacity: 0, duration: 1 }, "-=.5")
-                .from("#left-chart", { y: 50, opacity: 0, duration: 1 }, "-=.5")
-                .from("#chart-text", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#calc", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#paper", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#keyboard", { y: -5, x: 40, opacity: 0, duration: 1 }, "-=.5")
-                .from("#left-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
-                .from("#right-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
-                .from("#mid-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
+            imacMoblie.from(".svg1", { x: 100, opacity: 0, duration: .7 })
+                .from("#top-chart", { y: -50, opacity: 0, duration: .7 }, "-=.5")
+                .from("#left-chart", { y: 50, opacity: 0, duration: .7 }, "-=.5")
+                .from("#chart-text", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#calc", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#paper", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#keyboard", { y: -5, x: 40, opacity: 0, duration: .7 }, "-=.5")
+                .from("#left-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
+                .from("#right-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
+                .from("#mid-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
 
             imacTextMobile.from("#imac-text", { x: -100, opacity: 0, duration: 1 }) 
 
@@ -192,23 +192,23 @@ export default {
             macbookTextMobile.from("#macbookText", { opacity: 0, duration: 1, x: 100 })
 
             iphoneMobile.from(".svg3", { opacity: 0, duration: 1, x: 100 })
-                  .from("#low1", { opacity: 0, duration: 1})
-                  .from("#low2", { opacity: 0, duration: 1})
-                  .from("#low3", { opacity: 0, duration: 1})
-                  .from("#low4", { opacity: 0, duration: 1})
+                  .from("#low1", { opacity: 0, duration: .3})
+                  .from("#low2", { opacity: 0, duration: .3})
+                  .from("#low3", { opacity: 0, duration: .3})
+                  .from("#low4", { opacity: 0, duration: .3})
 
             iphoneTextMobile.from("#iphoneText", { opacity: 0, duration: 1, x: -100 })
         } else {
-            imac.from(".svg1", { x: 100, opacity: 0, duration: 1 })
-                .from("#top-chart", { y: -50, opacity: 0, duration: 1 }, "-=.5")
-                .from("#left-chart", { y: 50, opacity: 0, duration: 1 }, "-=.5")
-                .from("#chart-text", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#calc", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#paper", { opacity: 0, duration: 1 }, "-=.5")
-                .from("#keyboard", { y: -5, x: 40, opacity: 0, duration: 1 }, "-=.5")
-                .from("#left-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
-                .from("#right-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
-                .from("#mid-antenna", { y: 35, opacity: 0, duration: 1 }, "-=.5")
+            imac.from(".svg1", { x: 100, opacity: 0, duration: .7 })
+                .from("#top-chart", { y: -50, opacity: 0, duration: .7 }, "-=.5")
+                .from("#left-chart", { y: 50, opacity: 0, duration: .7 }, "-=.5")
+                .from("#chart-text", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#calc", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#paper", { opacity: 0, duration: .7 }, "-=.5")
+                .from("#keyboard", { y: -5, x: 40, opacity: 0, duration: .7 }, "-=.5")
+                .from("#left-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
+                .from("#right-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
+                .from("#mid-antenna", { y: 35, opacity: 0, duration: .7 }, "-=.5")
 
             imacText.from("#imac-text", { x: -100, opacity: 0, duration: 1 })
 
@@ -216,10 +216,10 @@ export default {
             macbookText.from("#macbookText", { opacity: 0, duration: 1, x: 100 })
 
             iphone.from(".svg3", { opacity: 0, duration: 1, x: 100 })
-                  .from("#low1", { opacity: 0, duration: 1})
-                  .from("#low2", { opacity: 0, duration: 1})
-                  .from("#low3", { opacity: 0, duration: 1})
-                  .from("#low4", { opacity: 0, duration: 1})
+                  .from("#low1", { opacity: 0, duration: .3})
+                  .from("#low2", { opacity: 0, duration: .3})
+                  .from("#low3", { opacity: 0, duration: .3})
+                  .from("#low4", { opacity: 0, duration: .3})
 
             iphoneText.from("#iphoneText", { opacity: 0, duration: 1, x: -100 })
         }
