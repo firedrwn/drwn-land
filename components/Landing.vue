@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="bg-base-purple md:h-screen">
+  <div class="bg-base-purple md:h-screen overflow-x-hidden">
     <iframe class="absolute w-full h-96 md:h-full overflow-hidden" scrolling="no" loading="lazy" allowtransparency="true" src="https://beethoven250.art/drwnparse/parser2.php" frameborder="0"></iframe>
     <div class="py-10 px-4 lg:py-32 xl:py-40 max-w-screen-2xl sm:mx-auto flex flex-col z-10">
       <p class="mb-3 text-white text-3xl xl:text-4xl 2xl:text-5xl xl:w-1/3 leading-10 2xl:leading-normal font-bold font-benzin-semibold sm:mx-6 lg:ml-28 z-10">Новый уровень<br> погружения<br> в финансовый рынок</p>

@@ -1,6 +1,6 @@
 <template>
 <div class="bg-deep-purple">
-    <div class="sm:flex sm:align-middle mx-auto max-w-screen-2xl">
+    <div class="md:flex md:align-middle mx-auto max-w-screen-2xl">
         <div class="h-32 sm:mx-10 lg:mx-32 flex align-middle justify-around">
             <nuxt-link class="main-logo w-32 flex align-middle" to="/">
                 <img class="w-32" src="@/assets/img/logo.svg" alt="">
@@ -14,8 +14,8 @@
         <div id="menu" :class="{ hidden: isHidden }" class="uppercase text-white flex flex-col sm:flex-row ml-14 font-ttnorms">
             <nuxt-link to="/review" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обзоры</nuxt-link>
             <nuxt-link to="/education" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">обучение</nuxt-link>
-            <nuxt-link to="#" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">идеи</nuxt-link>
-            <nuxt-link to="##" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
+            <nuxt-link to="/ideas" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">идеи</nuxt-link>
+            <nuxt-link to="/contacts" class="links mb-3 sm:mb-0 sm:p-3 cursor-pointer sm:self-center sm:mr-5">контакты</nuxt-link>
         </div>
 
         <div :class="{ hidden: isHidden }" class="flex self-center pb-5 sm:pb-0 cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">

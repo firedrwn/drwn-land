@@ -328,4 +328,8 @@ export default {
 .white-text {
     color: white !important;
 }
+.thumbnails {
+	margin: 0 -5px;
+	width: calc(100% + 10px);
+}
 </style>
