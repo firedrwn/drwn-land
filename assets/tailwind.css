@@ -28,5 +28,6 @@
 
 body, html {
     background-color: #190624;
-    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden !important;
 }
