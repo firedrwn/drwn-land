@@ -183,6 +183,7 @@ export default {
                     name: 'Анна',
                     initials: 'AA',
                     img: '/img/ayzada.png',
+                    vid: 'https://www.youtube.com/',
                     text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
                     open: false,
                 },

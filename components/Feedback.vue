@@ -11,8 +11,12 @@
                         <div class="font-benzin-semibold ml-4">{{ feedback.name }}</div>
                     </div>
                     <div class="mt-5 font-ttnorms">{{ feedback.text }}</div>
-                    <div @click="openFeedback($event)" class="mt-5 font-ttnorms text-base-green cursor-pointer">Читать отзыв полностью</div>
-                    <img @click="closeFeedback($event)" class="absolute invisible cursor-pointer shadow-lg rounded" :src="feedback.feedback" :id="feedback.name" alt="">
+                    <a :href="feedback.vid" target="_blank" v-if="feedback.vid" class="mt-5 font-ttnorms flex items-center text-red-400 cursor-pointer">
+                        <div class="mr-5"><img class="w-10" src="/img/feedbacks/vid.svg" alt=""></div>
+                        <div>Смотреть видео отзыв</div>
+                    </a>
+                    <div v-else @click="openFeedback($event)" class="mt-5 font-ttnorms text-base-green cursor-pointer">Читать отзыв полностью</div>
+                    <img @click="closeFeedback($event)" class="absolute max-w-xs md:max-w-full invisible cursor-pointer shadow-lg rounded" :src="feedback.feedback" :id="feedback.name" alt="">
                 </div>
               </div>
           </div>
