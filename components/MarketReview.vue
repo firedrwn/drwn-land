@@ -4,18 +4,18 @@
           <div class="lg:mx-auto max-w-screen-2xl py-10">
               <div class="flex flex-col">
                 <div class="text-white">
-                    <agile :options="myOptions" class="mx-5 mt-20 lg:mx-32">
-                                <template class="absolute top-0 right-0" slot="prevButton">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <agile :options="myOptions" class="mx-10 mt-20 lg:mx-32">
+                                <template slot="prevButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 -mt-28 lg:-mt-32 -ml-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                                     </svg>
                                 </template>
-                                <template class="absolute" slot="nextButton">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <template slot="nextButton">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 -mt-28 lg:-mt-32 -mr-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                     </svg>
                                 </template>
-                        <div v-for="day in days" :key="day.date" @click="currentDay = day; infoTabs = day.tabs; currentInfo = day.tabs[0]" class="slide">
+                        <div v-for="day in days" :key="day.date" @click="currentDay = day; infoTabs = day.tabs; currentInfo = day.tabs[0]" class="slide space-x-5 space-x-reverse">
                             <div class="font-benzin-semibold text-2xl text-light-purple mb-4">{{ day.date }}</div>
                             <div class="relative cursor-pointer">
                                 <img class="object-cover" :src="day.images[0]" alt="">
@@ -37,14 +37,16 @@
                                 <div class="md:w-130 lg:ml-28 lg:mr-10">
                                       <agile ref="main" :as-nav-for="asNavFor1" :options="options1" class="mx-5 mb-3">
                                             <div v-for="(slide, index) in currentDay.images" :key="index" class="slide">
-                                                <div>
+                                                <div class="mr-2 md:mr-4">
                                                     <img class="object-cover w-full" :src="slide" alt="">
                                                 </div>
                                             </div>
                                         </agile>
                                         <agile ref="thumbnails" :as-nav-for="asNavFor2" :options="options2" class="mx-5">
                                             <div v-for="(slide, index) in currentDay.images" :key="index" @click="$refs.thumbnails.goTo(index)" class="slide">
-                                                <img :src="slide" alt="">
+                                                <div class="w-32 h-20 cursor-pointer flex space-x-10 space-x-reverse">
+                                                    <img :src="slide" alt="" class="object-cover">
+                                                </div>
                                             </div>
                                         </agile>
                                         <div class="flex mt-5">
