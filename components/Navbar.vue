@@ -19,8 +19,8 @@
         </div>
 
         <div :class="{ hidden: isHidden }" class="flex self-center pb-5 sm:pb-0 cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
-            <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
-            <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt="">
+            <!-- <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
+            <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt=""> -->
         </div>
     </div>
 </div>

@@ -21,8 +21,8 @@
             </div> -->
 
             <div class="flex self-center align-middle  cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
-                <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
-                <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt="">
+                <!-- <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
+                <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt=""> -->
             </div>
         </div>
     </div>
@@ -41,15 +41,15 @@
                     <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
                   </div>
               </div>
-              <div class="relative mt-5 md:mt-0 mr-3 lg:w-1/3 lg:mr-32">
-                  <img class="z-10 macbook" src="/img/iphone.png" alt="">
+              <div class="relative flex justify-center items-center mt-5 md:mt-0 mr-3 lg:w-1/3 lg:mr-32">
+                  <img class="z-10 macbook w-56 md:w-96" src="/img/iphone.png" alt="">
               </div>
           </div>
       </div>
 
       <div class="bg-deep-purple text-white">
           <div id="arrowSection" class="flex flex-col lg:mx-auto lg:max-w-screen-2xl py-10 lg:py-28 sm:mx-10 md:flex-row md:justify-center">
-              <div class="ml-8 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:pl-32 xl:mt-12 lg:pt-1 md:order-last">
+              <div class="ml-8 pr-4 md:w-2/3 lg:ml-20 md:mt-10 lg:mt-24 xl:pl-32 xl:mt-12 lg:pt-1 md:order-last">
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl">Делегируй</div>
                   <div id="stag" class="font-benzin-bold text-3xl lg:text-4xl xl:text-4xl xl:mb-5 2xl:mb-10">инфошум нам!</div>
                   <div id="stag" class="flex align-middle mt-5 mb-3">
@@ -83,7 +83,10 @@
                     </g>
                     </svg>
 
-                    <img id="tablet" class="lg:pl-24" src="/img/tablet.png" alt="">
+                    <!-- <img id="tablet" class="lg:pl-24" src="/img/tablet.png" alt=""> -->
+                    <div id="tablet" class="z-10 lg:pl-24 h-64">
+                        <iframe class="w-full h-full"  src="https://www.youtube.com/embed/NMxZhitCLJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                   </div>
               </div>
           </div>
@@ -145,8 +148,8 @@
         </div>
 
         <div class="flex align-middle ml-5 mt-3 sm:mx-5 md:mr-32">
-            <a class="mr-3 md:mr-5" v-for="img in images" :key="img"  href="">
-                <img class="w-5 h-5" :src="img" alt="">
+            <a class="mr-3 md:mr-5" v-for="img in images" :key="img.img"  :href="img.link">
+                <img class="w-5 h-5" :src="img.img" alt="">
             </a>
         </div>
       </div>
@@ -183,17 +186,14 @@ export default {
                     name: 'Анна',
                     initials: 'AA',
                     img: '/img/ayzada.png',
-                    vid: 'https://www.youtube.com/',
+                    vid: 'https://www.youtube.com/watch?v=CItDrVpZbo0',
                     text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
                     open: false,
                 },
             ],
       images: [
-                '/img/tg.svg',
-                '/img/yt.svg',
-                '/img/fb.svg',
-                '/img/tw.svg',
-                '/img/vk.svg',
+                { img: '/img/tg.svg', link: 'https://t.me/drwn_trade'},
+                { img: '/img/yt.svg', link: 'https://www.youtube.com/channel/UCLbKokxJVsqfraWGYKtC7Uw'},
             ],
       strategy: [
           {

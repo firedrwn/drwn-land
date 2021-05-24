@@ -21,8 +21,8 @@
             </div> -->
 
             <div class="flex self-center align-middle  cursor-pointer ml-14 sm:mb-0 sm:ml-auto sm:mr-10 lg:mr-32">
-                <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
-                <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt="">
+                <!-- <img class="w-7 mr-2 h-5" src="@/assets/img/ru.png" alt="">
+                <img class="w-7 mr-2 h-5" src="@/assets/img/en.png" alt=""> -->
             </div>
         </div>
     </div>
@@ -38,7 +38,7 @@
                   <div class="font-ttnorms sm:text-lg xl:text-2xl">применимость разных инструментов.</div>
                   <div class="font-ttnorms sm:text-lg xl:text-2xl">Мы даем это — попробуй бесплатно!</div>
                   <div class="flex">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold py-1 px-2 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
                   </div>
               </div>
               <div class="relative mt-5 md:mt-0">
@@ -66,7 +66,7 @@
                     <div class="font-ttnorms ml-3 text-lg xl:text-2xl">Сообщество единомышленников</div>
                   </div>
                   <div id="stag" class="flex">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold py-2 px-3 mt-8 xl:py-2 xl:px-3 xl:text-lg border-2 border-base-green text-white transition duration-300 hover:bg-base-green hover:text-deep-purple rounded-sm cursor-pointer uppercase">начать</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">начать</a>
                   </div>
               </div>
               <div class="mt-5 md:mt-12 md:w-2/3 lg:mt-28 lg:mb-20">
@@ -80,7 +80,10 @@
                     </g>
                     </svg>
 
-                    <img id="tablet" class="lg:pl-24" src="/img/tablet.png" alt="">
+                    <!-- <img id="tablet" class="lg:pl-24" src="/img/tablet.png" alt=""> -->
+                    <div id="tablet" class="z-10 lg:pl-24 h-64">
+                        <iframe class="w-full h-full"  src="https://www.youtube.com/embed/hArP4g4OSi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                   </div>
               </div>
           </div>
@@ -132,7 +135,7 @@
 
             <div class="flex justify-center lg:justify-around lg:w-1/2 lg:pl-64">
                 <div class="md:self-center">
-                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot border-2 border-base-green text-white inline-block py-2 px-4 rounded transform hover:bg-base-green hover:text-deep-purple transition duration-300 cursor-pointer font-benzin-bold uppercase">Получить</a>
+                    <a :href="'http://t.me/drwntrade_bot/?start=' + utm" class="bot text-white font-benzin-bold mt-8 py-3 px-6 text-sm border-2 border-base-green rounded cursor-pointer transition duration-300 hover:bg-base-green hover:text-deep-purple uppercase">Получить</a>
                 </div>
             </div>
 
@@ -154,8 +157,8 @@
         </div>
 
         <div class="flex align-middle ml-5 mt-3 sm:mx-5 md:mr-32">
-            <a class="mr-3 md:mr-5" v-for="img in images" :key="img"  href="">
-                <img class="w-5 h-5" :src="img" alt="">
+            <a class="mr-3 md:mr-5" v-for="img in images" :key="img.img"  :href="img.link">
+                <img class="w-5 h-5" :src="img.img" alt="">
             </a>
         </div>
       </div>
@@ -172,11 +175,8 @@ export default {
       utm: '',
       isHidden: this.menuHidden(),
       images: [
-                '/img/tg.svg',
-                '/img/yt.svg',
-                '/img/fb.svg',
-                '/img/tw.svg',
-                '/img/vk.svg',
+                { img: '/img/tg.svg', link: 'https://t.me/drwn_trade'},
+                { img: '/img/yt.svg', link: 'https://www.youtube.com/channel/UCLbKokxJVsqfraWGYKtC7Uw'},
             ],
       feedbacks: [
                 {
@@ -199,7 +199,7 @@ export default {
                     name: 'Анна',
                     initials: 'AA',
                     img: '/img/ayzada.png',
-                    vid: 'https://www.youtube.com/',
+                    vid: 'https://www.youtube.com/watch?v=CItDrVpZbo0',
                     text: 'Действительно, кладезь полезной информации для новичков. Помогает ориентироваться на рынке!',
                     open: false,
                 },
