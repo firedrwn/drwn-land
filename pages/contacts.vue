@@ -8,8 +8,8 @@
 </template>
 
 <script>
+import { db } from '../plugins/fireConf'
 export default {
-
 }
 </script>
 

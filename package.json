@@ -9,7 +9,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "core-js": "^3.9.1",
+    "firebase": "^8.6.2",
     "nuxt": "^2.15.3",
     "vue-agile": "^1.1.3"
   },

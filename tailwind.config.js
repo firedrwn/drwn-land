@@ -39,5 +39,7 @@ module.exports = {
       grayscale: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
